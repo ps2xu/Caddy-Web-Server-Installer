@@ -446,7 +446,7 @@ installphp () {
 
 			# Setup PHP
 			if [[ $CODENAME -gt 15 ]] || [[ $DEBIAN9V -eq 9 ]]; then
-				PHP="php7.0"
+				PHP="php7.2"
 			elif [[ $DEBIAN9V -ge 10 ]]; then
 				PHP="php"
 			else
