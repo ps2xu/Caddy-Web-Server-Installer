@@ -512,9 +512,9 @@ fixphpfpm () {
 		echo "  [$(tput setaf 2)DONE$(tput sgr0)]"
 
 	# PHP 7
-	elif [[ -e "$phpfpm7" ]] ; then
-		sed -i "s@user = .*@user = $phpuser@g" $phpfpm7
-		sed -i "s@group = .*@group = $phpuser@g" $phpfpm7
+	elif [[ -e "$phpfpm7.2" ]] ; then
+		sed -i "s@user = .*@user = $phpuser@g" $phpfpm7.2
+		sed -i "s@group = .*@group = $phpuser@g" $phpfpm7.2
 		echo "  [$(tput setaf 2)DONE$(tput sgr0)]"
 
 	else
